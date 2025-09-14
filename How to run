@@ -1,0 +1,33 @@
+Open terminal in project root:
+
+1.Create virtual env and install deps:
+
+python -m venv venv
+source venv/bin/activate        # Linux / Mac
+# .\venv\Scripts\activate      # Windows PowerShell
+pip install --upgrade pip
+pip install pandas scikit-learn flask joblib
+
+
+2.Build dataset (creates data/synthetic_urls.csv):
+
+python src/build_dataset.py
+
+
+3.Train model:
+
+python src/train.py
+# result: models/phish_model.joblib
+
+
+4.Run the Flask demo:
+
+python src/api.py
+# open http://127.0.0.1:5000 in your browser
+
+
+5.Test with sample URLs:
+
+Benign: https://www.google.com/search?q=hello
+
+Suspicious: http://login-abc123-paypal.com/verify
