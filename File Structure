@@ -1,0 +1,16 @@
+phish-detector/
+├─ data/
+│  ├─ synthetic_urls.csv        # created by script
+├─ models/
+│  ├─ phish_model.joblib
+├─ src/
+│  ├─ build_dataset.py         # generate small dataset
+│  ├─ features.py              # feature extraction functions
+│  ├─ train.py                 # trains + saves model
+│  ├─ api.py                   # Flask app
+│  ├─ web/
+│     ├─ templates/
+│        ├─ index.html
+│     ├─ static/
+│        ├─ style.css
+├─ README.md
