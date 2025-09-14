@@ -1,0 +1,5 @@
+python -m venv venv
+source venv/bin/activate        # Linux / Mac
+# .\venv\Scripts\activate      # Windows PowerShell
+pip install --upgrade pip
+pip install pandas scikit-learn flask joblib
